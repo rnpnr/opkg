@@ -1,7 +1,7 @@
 [core]
 	sharedRepository = 0664
 	sparseCheckout = true
-[oasis]
+[opkg]
 	root = .
 [merge "perms"]
 	name = .perms merge driver

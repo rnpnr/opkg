@@ -490,10 +490,8 @@ function man(srcs, section)
 			src = '$srcdir/'..src
 		end
 		local i = src:find('/', 1, true)
-		local gz = '$outdir'..src:sub(i)..'.gz'
-		build('gzip', gz, src)
 		local srcsection = section or src:match('[^.]*$')
-		file('share/man/man'..srcsection..'/'..gz:match('[^/]*$'), '644', gz)
+		file('share/man/man'..srcsection..'/'..src:match('[^/]*$'), '644', src)
 	end
 end
 

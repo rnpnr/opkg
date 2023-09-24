@@ -23,7 +23,7 @@ else
 fi
 
 if [ -z "${commit+set}" ] ; then
-	commit=$(git -C "$repo" commit-tree -m "oasis $(git rev-parse --short=10 HEAD)" "$@" "$tag")
+	commit=$(git -C "$repo" commit-tree -m "opkg $(git rev-parse --short=10 HEAD)" "$@" "$tag")
 	git -C "$repo" update-ref "refs/heads/$branch" "$commit"
 fi
 echo "$commit" >"$out"
