@@ -6,6 +6,9 @@ local C = {}
 -- build output directory
 C.builddir = 'out'
 
+-- install prefix (needed by some packages)
+C.prefix = ''
+
 --[[
 package/file selection
 
