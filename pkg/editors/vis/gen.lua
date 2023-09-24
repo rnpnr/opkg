@@ -62,6 +62,8 @@ exe('vis', [[
 ]])
 file('bin/vis', '755', '$outdir/vis')
 
+file('bin/vis-clipboard', '755', '$srcdir/vis-clipboard')
+
 exe('vis-digraph', {'vis-digraph.c'})
 file('bin/vis-digraph', '755', '$outdir/vis-digraph')
 
