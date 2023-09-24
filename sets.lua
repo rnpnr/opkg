@@ -5,6 +5,7 @@ S.bin = {
 	'pwgen',
 	'samurai',
 	'skeleton',
+	'spm',
 	'strace',
 	'vis',
 }

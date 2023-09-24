@@ -1,6 +1,9 @@
 [submodule "pkg/admin/pwgen/src"]
 	path = pkg/admin/pwgen/src
 	url = https://github.com/tytso/pwgen.git
+[submodule "pkg/admin/spm/src"]
+	path = pkg/admin/spm/src
+	url = https://github.com/rnpnr/spm.git
 [submodule "pkg/crypt/b3sum/src"]
 	path = pkg/crypt/b3sum/src
 	url = https://git.sr.ht/~mcf/b3sum
