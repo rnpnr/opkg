@@ -4,6 +4,7 @@ S.bin = {
 	'awk',
 	'pwgen',
 	'samurai',
+	'skeleton',
 	'strace',
 	'vis',
 }

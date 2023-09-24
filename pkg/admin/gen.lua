@@ -1,1 +1,2 @@
 subgen('pwgen')
+subgen('skeleton')
