@@ -1,0 +1,2 @@
+subgen('awk')
+subgen('lua')

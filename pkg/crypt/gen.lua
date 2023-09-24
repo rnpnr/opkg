@@ -1,0 +1,1 @@
+subgen('b3sum')

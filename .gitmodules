@@ -1,0 +1,21 @@
+[submodule "pkg/admin/pwgen/src"]
+	path = pkg/admin/pwgen/src
+	url = https://github.com/tytso/pwgen.git
+[submodule "pkg/crypt/b3sum/src"]
+	path = pkg/crypt/b3sum/src
+	url = https://git.sr.ht/~mcf/b3sum
+[submodule "pkg/crypt/fspec-sync/src"]
+	path = pkg/devel/fspec-sync/src
+	url = https://github.com/oasislinux/fspec-sync.git
+[submodule "pkg/devel/samurai/src"]
+	path = pkg/devel/samurai/src
+	url = https://github.com/michaelforney/samurai.git
+[submodule "pkg/editors/vis/src"]
+	path = pkg/editors/vis/src
+	url = https://github.com/martanne/vis.git
+[submodule "pkg/lang/awk/src"]
+	path = pkg/lang/awk/src
+	url = https://github.com/onetrueawk/awk.git
+[submodule "pkg/libs/netbsd-curses/src"]
+	path = pkg/libs/netbsd-curses/src
+	url = https://github.com/oasislinux/netbsd-curses.git
