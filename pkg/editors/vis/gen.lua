@@ -63,14 +63,14 @@ exe('vis', [[
 ]])
 file('bin/vis', '755', '$outdir/vis')
 
-file('bin/vis-clipboard', '755', '$srcdir/vis-clipboard')
-
 exe('vis-digraph', {'vis-digraph.c'})
 file('bin/vis-digraph', '755', '$outdir/vis-digraph')
 
 exe('vis-menu', {'vis-menu.c'})
 file('bin/vis-menu', '755', '$outdir/vis-menu')
 
+file('bin/vis-clipboard', '755', '$srcdir/vis-clipboard')
+file('bin/vis-complete', '755', '$srcdir/vis-complete')
 file('bin/vis-open', '755', '$srcdir/vis-open')
 
 for _, f in ipairs{'vis.1', 'vis-digraph.1', 'vis-menu.1', 'vis-open.1'} do
