@@ -1,1 +1,2 @@
+subgen('hyx')
 subgen('vis')
