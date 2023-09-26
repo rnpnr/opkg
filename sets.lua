@@ -3,6 +3,7 @@ local S = {}
 S.bin = {
 	'awk',
 	'hyx',
+	'openbsd',
 	'pwgen',
 	'samurai',
 	'skeleton',
