@@ -19,6 +19,9 @@
 [submodule "pkg/lang/awk/src"]
 	path = pkg/lang/awk/src
 	url = https://github.com/onetrueawk/awk.git
+[submodule "pkg/libs/bearssl/src"]
+	path = pkg/libs/bearssl/src
+	url = https://www.bearssl.org/git/BearSSL
 [submodule "pkg/libs/netbsd-curses/src"]
 	path = pkg/libs/netbsd-curses/src
 	url = https://github.com/oasislinux/netbsd-curses.git
