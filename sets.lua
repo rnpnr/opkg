@@ -13,6 +13,7 @@ S.bin = {
 }
 
 S.lib = {
+	'libtls-bearssl',
 	'netbsd-curses',
 }
 

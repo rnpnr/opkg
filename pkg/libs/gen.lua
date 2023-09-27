@@ -1,4 +1,5 @@
 subgen('bearssl')
 subgen('libtermkey')
+subgen('libtls-bearssl')
 subgen('lpeg')
 subgen('netbsd-curses')

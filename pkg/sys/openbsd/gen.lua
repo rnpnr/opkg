@@ -51,19 +51,17 @@ man({'usr.bin/doas/doas.1', 'usr.bin/doas/doas.conf.5'})
 file('bin/fmt', '755', exe('fmt', {'usr.bin/fmt/fmt.c', 'libbsd.a'}))
 man({'usr.bin/fmt/fmt.1'})
 
---[[
 -- nc
 sub('nc.ninja', function()
-	cflags({'-isystem $builddir/pkg/libtls-bearssl/include'})
+	cflags({'-isystem $builddir/pkg/libs/libtls-bearssl/include'})
 	exe('nc', [[
 		usr.bin/nc/(netcat.c atomicio.c socks.c)
-		$builddir/pkg/libtls-bearssl/libtls.a.d
+		$builddir/pkg/libs/libtls-bearssl/libtls.a.d
 		libbsd.a
-	, {'pkg/libtls-bearssl/headers'})
+	]], {'pkg/libs/libtls-bearssl/headers'})
 	file('bin/nc', '755', '$outdir/nc')
 	man({'usr.bin/nc/nc.1'})
 end)
---]]
 
 -- m4
 yacc('usr.bin/m4/parser', 'usr.bin/m4/parser.y')
