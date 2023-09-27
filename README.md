@@ -1,7 +1,7 @@
 opkg
 ====
 
-This repo is adapted from [oasis][] and but rather then installing as
+This repo is adapted from [oasis][] but rather than installing as
 an OS it is meant to be installed alongside your existing system.
 
 The majority of things are unchanged. Most notably:
