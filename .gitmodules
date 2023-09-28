@@ -24,6 +24,9 @@
 	path = pkg/libs/bearssl/src
 	url = https://www.bearssl.org/git/BearSSL
 	ignore = all
+[submodule "pkg/libs/libpng/src"]
+	path = pkg/libs/libpng/src
+	url = https://github.com/glennrp/libpng.git
 [submodule "pkg/libs/libtls-bearssl/src"]
 	path = pkg/libs/libtls-bearssl/src
 	url = https://git.sr.ht/~mcf/libtls-bearssl
