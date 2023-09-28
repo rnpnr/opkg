@@ -32,3 +32,6 @@
 	path = pkg/libs/netbsd-curses/src
 	url = https://github.com/oasislinux/netbsd-curses.git
 	ignore = all
+[submodule "pkg/libs/zlib/src"]
+	path = pkg/libs/zlib/src
+	url = https://github.com/madler/zlib.git
