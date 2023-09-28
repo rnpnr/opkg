@@ -1,1 +1,2 @@
 subgen('openbsd')
+subgen('mandoc')

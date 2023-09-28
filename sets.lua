@@ -4,6 +4,7 @@ S.bin = {
 	'awk',
 	'curl',
 	'hyx',
+	'mandoc',
 	'openbsd',
 	'pwgen',
 	'samurai',
