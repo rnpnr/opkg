@@ -38,3 +38,6 @@
 [submodule "pkg/libs/zlib/src"]
 	path = pkg/libs/zlib/src
 	url = https://github.com/madler/zlib.git
+[submodule "pkg/textproc/cmark/src"]
+	path = pkg/textproc/cmark/src
+	url = https://github.com/commonmark/cmark.git
