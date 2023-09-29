@@ -5,6 +5,7 @@ S.bin = {
 	'cmark',
 	'curl',
 	'hyx',
+	'man-pages-posix',
 	'mandoc',
 	'openbsd',
 	'pwgen',
