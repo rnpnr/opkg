@@ -38,6 +38,9 @@
 [submodule "pkg/libs/zlib/src"]
 	path = pkg/libs/zlib/src
 	url = https://github.com/madler/zlib.git
+[submodule "pkg/sys/sbase/src"]
+	path = pkg/sys/sbase/src
+	url = git://git.suckless.org/sbase
 [submodule "pkg/textproc/cmark/src"]
 	path = pkg/textproc/cmark/src
 	url = https://github.com/commonmark/cmark.git

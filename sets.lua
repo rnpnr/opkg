@@ -10,6 +10,7 @@ S.bin = {
 	'openbsd',
 	'pwgen',
 	'samurai',
+	'sbase',
 	'skeleton',
 	'spm',
 	'strace',
