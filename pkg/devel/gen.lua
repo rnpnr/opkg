@@ -1,4 +1,5 @@
 subgen('fspec-sync')
+subgen('git')
 subgen('linux-headers')
 subgen('man-pages-posix')
 subgen('samurai')

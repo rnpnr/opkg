@@ -10,6 +10,10 @@
 [submodule "pkg/crypt/fspec-sync/src"]
 	path = pkg/devel/fspec-sync/src
 	url = https://github.com/oasislinux/fspec-sync.git
+[submodule "pkg/devel/git/src"]
+	path = pkg/devel/git/src
+	url = https://github.com/git/git.git
+	ignore = all
 [submodule "pkg/devel/samurai/src"]
 	path = pkg/devel/samurai/src
 	url = https://github.com/michaelforney/samurai.git

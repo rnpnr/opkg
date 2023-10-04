@@ -4,6 +4,7 @@ S.bin = {
 	'awk',
 	'cmark',
 	'curl',
+	'git',
 	'hyx',
 	'man-pages-posix',
 	'mandoc',
