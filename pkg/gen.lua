@@ -1,4 +1,5 @@
 subgen('admin')
+subgen('arch')
 subgen('crypt')
 subgen('devel')
 subgen('editors')

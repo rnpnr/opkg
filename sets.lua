@@ -9,6 +9,7 @@ S.bin = {
 	'man-pages-posix',
 	'mandoc',
 	'openbsd',
+	'pigz',
 	'pwgen',
 	'samurai',
 	'sbase',
