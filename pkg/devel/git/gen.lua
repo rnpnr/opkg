@@ -31,14 +31,7 @@ build('hooklist', '$outdir/hook-list.h', {
 	'|', '$srcdir/generate-hooklist.sh', '$srcdir/Documentation/githooks.txt'
 })
 
-cc('setup.c', nil, {cflags=string.format(
-	[[$cflags '-D DEFAULT_GIT_TEMPLATE_DIR="%s/share/git-core/templates"']],
-	config.prefix)
-})
-cc('exec-cmd.c', nil, {cflags=string.format(
-	[[$cflags '-DFALLBACK_RUNTIME_PREFIX=""' '-D GIT_EXEC_PATH="%s/libexec/git-core"']],
-	config.prefix)
-})
+cc('exec-cmd.c', nil, {cflags=string.format([[$cflags '-DFALLBACK_RUNTIME_PREFIX="%s"']], config.prefix)})
 cc('common-main.c')
 cc('http.c')
 cc('compat/regex/regex.c', nil, {cflags='$cflags -DGAWK -DNO_MBSUPPORT'})
@@ -226,7 +219,7 @@ lib('libgit.a', [[
 	sequencer.c
 	serve.c
 	server-info.c
-	setup.c.o
+	setup.c
 	shallow.c
 	sideband.c
 	sigchain.c
@@ -368,6 +361,7 @@ local builtins = {
 	'get-tar-commit-id',
 	'grep',
 	'hash-object',
+	'help',
 	'hook',
 	'index-pack',
 	'init-db',
@@ -441,14 +435,7 @@ local builtins = {
 	'write-tree',
 }
 
-local docdefs = string.format([['-D GIT_INFO_PATH="%s/share/info"' ]]
-	.. [['-D GIT_MAN_PATH="%s/share/man"' ]]
-	.. [['-D GIT_HTML_PATH="%s/share/doc/git-doc"']],
-	config.prefix, config.prefix, config.prefix)
-cc('git.c', nil, {cflags=[[$cflags ]] .. docdefs})
-cc('builtin/help.c', nil, {cflags=[[$cflags ]] .. docdefs})
-
-exe('git', {'git.c.o', 'common-main.c.o', 'builtin/help.c.o', expand({'builtin/', builtins, '.c'}), 'libgit.a.d'})
+exe('git', {'git.c', 'common-main.c.o', expand({'builtin/', builtins, '.c'}), 'libgit.a.d'})
 file('bin/git', '755', '$outdir/git')
 
 local programs = {

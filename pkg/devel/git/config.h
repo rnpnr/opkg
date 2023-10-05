@@ -1,8 +1,13 @@
 #define DEFAULT_EDITOR "ed"
+#define DEFAULT_GIT_TEMPLATE_DIR "share/git-core/templates"
 #define DEFAULT_PAGER ""
 #define ETC_GITATTRIBUTES "/etc/gitattributes"
 #define ETC_GITCONFIG "/etc/gitconfig"
 #define GIT_BUILT_FROM_COMMIT "43c8a30d150ecede9709c1f2527c8fba92c65f40"
+#define GIT_EXEC_PATH "libexec/git-core"
+#define GIT_HTML_PATH "share/doc/git-doc"
+#define GIT_INFO_PATH "share/info"
+#define GIT_MAN_PATH "share/man"
 #define GIT_HOST_CPU "unknown"
 #define GIT_USER_AGENT "git/" GIT_VERSION
 #define GIT_VERSION "2.42.0"
