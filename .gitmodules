@@ -45,6 +45,9 @@
 [submodule "pkg/libs/zlib/src"]
 	path = pkg/libs/zlib/src
 	url = https://github.com/madler/zlib.git
+[submodule "pkg/net/sfeed/src"]
+	path = pkg/net/sfeed/src
+	url = git://git.codemadness.org/sfeed
 [submodule "pkg/sys/sbase/src"]
 	path = pkg/sys/sbase/src
 	url = git://git.suckless.org/sbase

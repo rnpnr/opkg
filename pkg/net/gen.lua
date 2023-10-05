@@ -1,1 +1,2 @@
 subgen('curl')
+subgen('sfeed')

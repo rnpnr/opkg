@@ -13,6 +13,7 @@ S.bin = {
 	'pwgen',
 	'samurai',
 	'sbase',
+	'sfeed',
 	'skeleton',
 	'spm',
 	'strace',
