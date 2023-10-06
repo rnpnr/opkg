@@ -499,4 +499,6 @@ dir('share/git-core/templates/hooks', '755')
 
 man(expand({'man/', lines('man.txt')}))
 
+pkg.hdrs = copy('$outdir/include', '$srcdir/xdiff', { 'xdiff.h' })
+
 fetch('local')
