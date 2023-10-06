@@ -1,0 +1,1 @@
+subgen('stagit')

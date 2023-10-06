@@ -57,3 +57,6 @@
 [submodule "pkg/textproc/cmark/src"]
 	path = pkg/textproc/cmark/src
 	url = https://github.com/commonmark/cmark.git
+[submodule "pkg/www/stagit/src"]
+	path = pkg/www/stagit/src
+	url = git://git.codemadness.org/stagit

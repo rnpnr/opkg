@@ -16,6 +16,7 @@ S.bin = {
 	'sfeed',
 	'skeleton',
 	'spm',
+	'stagit',
 	'strace',
 	'vis',
 }
