@@ -2,7 +2,7 @@ set('version', 'cbaa0d8')
 cflags({
 	'-std=c99',
 	'-D CONFIG_HELP=1',
-	'-D CONFIG_CURSES=1',
+	'-D CONFIG_CURSES=0',
 	'-D CONFIG_LUA=1',
 	'-D CONFIG_LPEG=1',
 	'-D CONFIG_TRE=0',
@@ -17,7 +17,6 @@ cflags({
 	'-I $outdir',
 	'-isystem $builddir/pkg/lang/lua/include',
 	'-isystem $builddir/pkg/libs/libtermkey/include',
-	'-isystem $builddir/pkg/libs/netbsd-curses/include',
 })
 
 build('copy', '$outdir/config.h', '$srcdir/config.def.h')
@@ -26,7 +25,6 @@ pkg.deps = {
 	'$outdir/config.h',
 	'pkg/lang/lua/headers',
 	'pkg/libs/libtermkey/headers',
-	'pkg/libs/netbsd-curses/headers',
 }
 
 exe('vis', [[
@@ -59,7 +57,6 @@ exe('vis', [[
 	$builddir/pkg/lang/lua/liblua.a
 	$builddir/pkg/libs/libtermkey/libtermkey.a.d
 	$builddir/pkg/libs/lpeg/liblpeg.a
-	$builddir/pkg/libs/netbsd-curses/libcurses.a.d
 ]])
 file('bin/vis', '755', '$outdir/vis')
 
