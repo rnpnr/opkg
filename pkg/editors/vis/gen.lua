@@ -1,4 +1,4 @@
-set('version', '7111608')
+set('version', 'cbaa0d8')
 cflags({
 	'-std=c99',
 	'-D CONFIG_HELP=1',
