@@ -1,6 +1,6 @@
 cflags({
 	'-I $dir',
-	'-I $outdir/include',
+	'-I $srcdir/include',
 	'-I $srcdir/deps/http-parser',
 	'-I $srcdir/deps/xdiff',
 	'-I $srcdir/src/libgit2',
@@ -213,7 +213,7 @@ lib('libgit2.a', [[
 	$builddir/pkg/libs/zlib/libz.a
 ]])
 
- -- <cd src/include; find . -type f
+-- <cd src/include; find . -type f
 pkg.hdrs = {
 	copy('$outdir/include', '$srcdir/include', { 'git2.h' }),
 	copy('$outdir/include/git2', '$srcdir/include/git2', {
