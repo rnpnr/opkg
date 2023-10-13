@@ -58,21 +58,20 @@ exe('vis', [[
 	$builddir/pkg/libs/libtermkey/libtermkey.a.d
 	$builddir/pkg/libs/lpeg/liblpeg.a
 ]])
-file('bin/vis', '755', '$outdir/vis')
 
 exe('vis-digraph', {'vis-digraph.c'})
-file('bin/vis-digraph', '755', '$outdir/vis-digraph')
-
 exe('vis-menu', {'vis-menu.c'})
-file('bin/vis-menu', '755', '$outdir/vis-menu')
 
-file('bin/vis-clipboard', '755', '$srcdir/vis-clipboard')
-file('bin/vis-complete', '755', '$srcdir/vis-complete')
-file('bin/vis-open', '755', '$srcdir/vis-open')
+for _, b in ipairs({'vis', 'vis-digraph', 'vis-menu'}) do
+	file('bin/'..b, '755', '$outdir/'..b)
+	build('sed', '$outdir/'..b..'.1', '$srcdir/man/'..b..'.1', {expr='s,VERSION,$version,'})
+	man({'$outdir/'..b.. '.1'})
+end
 
-for _, f in ipairs{'vis.1', 'vis-digraph.1', 'vis-menu.1', 'vis-open.1'} do
-	build('sed', '$outdir/'..f, '$srcdir/man/'..f, {expr='s,VERSION,$version,'})
-	man({'$outdir/'..f})
+for _, s in ipairs({'vis-complete', 'vis-clipboard', 'vis-open'}) do
+	file('bin/'..s, '755', '$srcdir/'..s)
+	build('sed', '$outdir/'..s..'.1', '$srcdir/man/'..s..'.1', {expr='s,VERSION,$version,'})
+	man({'$outdir/'..s.. '.1'})
 end
 
 for f in iterlines('lua.txt') do
