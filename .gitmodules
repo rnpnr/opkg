@@ -58,9 +58,9 @@
 [submodule "pkg/sys/sbase/src"]
 	path = pkg/sys/sbase/src
 	url = git://git.suckless.org/sbase
-[submodule "pkg/textproc/cmark/src"]
-	path = pkg/textproc/cmark/src
-	url = https://github.com/commonmark/cmark.git
+[submodule "pkg/textproc/md4c/src"]
+	path = pkg/textproc/md4c/src
+	url = https://github.com/mity/md4c.git
 [submodule "pkg/www/stagit/src"]
 	path = pkg/www/stagit/src
 	url = git://git.codemadness.org/stagit
