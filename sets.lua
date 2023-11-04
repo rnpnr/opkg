@@ -7,6 +7,7 @@ S.bin = {
 	'hyx',
 	'man-pages-posix',
 	'mandoc',
+	'mblaze',
 	'md4c',
 	'openbsd',
 	'pigz',
