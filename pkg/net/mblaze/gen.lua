@@ -60,8 +60,8 @@ local scripts = {
 for _, script in ipairs(scripts) do
 	file('bin/'..script, '755', '$srcdir/'..script)
 end
-file('bin/msign', 755, '$srcdir/contrib/msign')
-file('bin/mverify', 755, '$srcdir/contrib/mverify')
+file('bin/msign', '755', '$srcdir/contrib/msign')
+file('bin/mverify', '755', '$srcdir/contrib/mverify')
 file('bin/museragent', '755', '$outdir/museragent')
 sym('bin/mbnc', 'mcom')
 sym('bin/mfwd', 'mcom')
