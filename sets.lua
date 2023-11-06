@@ -9,6 +9,7 @@ S.bin = {
 	'mandoc',
 	'mblaze',
 	'md4c',
+	'msmtp',
 	'openbsd',
 	'pigz',
 	'pwgen',

@@ -55,6 +55,9 @@
 [submodule "pkg/net/mblaze/src"]
 	path = pkg/net/mblaze/src
 	url = https://github.com/leahneukirchen/mblaze.git
+[submodule "pkg/net/msmtp/src"]
+	path = pkg/net/msmtp/src
+	url = https://github.com/marlam/msmtp-mirror.git
 [submodule "pkg/net/sfeed/src"]
 	path = pkg/net/sfeed/src
 	url = git://git.codemadness.org/sfeed
