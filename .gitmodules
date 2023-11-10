@@ -17,6 +17,10 @@
 	path = pkg/devel/git/src
 	url = https://github.com/git/git.git
 	ignore = all
+[submodule "pkg/devel/qbe/src"]
+	path = pkg/devel/qbe/src
+	url = git://c9x.me/qbe.git
+	ignore = all
 [submodule "pkg/devel/samurai/src"]
 	path = pkg/devel/samurai/src
 	url = https://github.com/michaelforney/samurai.git

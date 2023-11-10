@@ -13,6 +13,7 @@ S.bin = {
 	'openbsd',
 	'pigz',
 	'pwgen',
+	'qbe',
 	'samurai',
 	'sbase',
 	'sfeed',
