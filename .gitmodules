@@ -13,6 +13,9 @@
 [submodule "pkg/crypt/fspec-sync/src"]
 	path = pkg/devel/fspec-sync/src
 	url = https://github.com/oasislinux/fspec-sync.git
+[submodule "pkg/devel/cproc/src"]
+	path = pkg/devel/cproc/src
+	url = https://git.sr.ht/~mcf/cproc
 [submodule "pkg/devel/git/src"]
 	path = pkg/devel/git/src
 	url = https://github.com/git/git.git

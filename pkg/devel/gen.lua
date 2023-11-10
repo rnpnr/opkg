@@ -1,3 +1,4 @@
+subgen('cproc')
 subgen('fspec-sync')
 subgen('git')
 subgen('linux-headers')
