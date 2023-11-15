@@ -67,8 +67,8 @@ lib('libutf.a', [[libutf/(
 	utftorunestr.c
 )]])
 
-rule('getconf', '$srcdir/getconf.sh >$out')
-build('getconf', '$outdir/getconf.h', {'|', '$srcdir/getconf.sh'})
+rule('getconf', '$srcdir/scripts/getconf.sh >$out')
+build('getconf', '$outdir/getconf.h', {'|', '$srcdir/scripts/getconf.sh'})
 
 local cmds = {
 	'basename',
