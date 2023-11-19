@@ -12,6 +12,7 @@ S.bin = {
 	'md4c',
 	'msmtp',
 	'openbsd',
+	'optipng',
 	'pigz',
 	'pwgen',
 	'qbe',
