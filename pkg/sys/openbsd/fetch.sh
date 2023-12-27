@@ -27,6 +27,7 @@ sh "$OLDPWD/scripts/extract.sh" src.tar.gz -s ',^,src/,' \
 	'usr.bin/nc/*' \
 	'usr.bin/patch/*' \
 	'usr.bin/rsync/*' \
+	'usr.bin/xargs/*' \
 	'usr.bin/yacc/*' \
 	'usr.sbin/acme-client/*'
 sh "$OLDPWD/scripts/extract.sh" sys.tar.gz -s ',^,src/,' 'sys/sys/*'

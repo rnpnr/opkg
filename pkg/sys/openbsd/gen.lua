@@ -102,4 +102,9 @@ exe('rsync', [[
 file('bin/rsync', '755', '$outdir/rsync')
 man({'usr.bin/rsync/rsync.1', 'usr.bin/rsync/rsync.5', 'usr.bin/rsync/rsyncd.5'})
 
+-- xargs
+exe('xargs', [[usr.bin/xargs/(xargs.c strnsubst.c) libbsd.a]])
+file('bin/xargs', '755', '$outdir/xargs')
+man({'usr.bin/xargs/xargs.1'})
+
 fetch('local')

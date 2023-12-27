@@ -166,7 +166,6 @@ local cmds = {
 	'wc',
 	'which',
 	'whoami',
-	'xargs',
 	'yes',
 }
 for _, cmd in ipairs(cmds) do

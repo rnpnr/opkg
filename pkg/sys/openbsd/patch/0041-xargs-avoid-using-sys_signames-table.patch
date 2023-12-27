@@ -1,0 +1,31 @@
+From 5f949b35a10b496bae09de3d30c62580c39e3cf7 Mon Sep 17 00:00:00 2001
+From: Randy Palamar <randy@rnpnr.xyz>
+Date: Wed, 27 Dec 2023 09:24:34 -0700
+Subject: [PATCH] xargs: avoid using sys_signames table
+
+---
+ usr.bin/xargs/xargs.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+diff --git a/usr.bin/xargs/xargs.c b/usr.bin/xargs/xargs.c
+index ff17caa..18942bb 100644
+--- a/usr.bin/xargs/xargs.c
++++ b/usr.bin/xargs/xargs.c
+@@ -581,12 +581,8 @@ waitchildren(const char *name, int waitall)
+ 			}
+ 		} else if (WIFSIGNALED(status)) {
+ 			if (WTERMSIG(status) != SIGPIPE) {
+-				if (WTERMSIG(status) < NSIG)
+-					warnx("%s terminated by SIG%s", name,
+-					    sys_signame[WTERMSIG(status)]);
+-				else
+-					warnx("%s terminated by signal %d",
+-					    name, WTERMSIG(status));
++				warnx("%s terminated by signal %d",
++				    name, WTERMSIG(status));
+ 			}
+ 			exit(125);
+ 		}
+-- 
+2.42.0
+
