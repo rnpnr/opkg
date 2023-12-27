@@ -2,6 +2,7 @@ cflags({
 	'-std=c99', '-Wall', '-Wextra',
 	'-D _POSIX_C_SOURCE',
 	'-isystem $builddir/pkg/libs/libpng/include',
+	'-isystem $builddir/pkg/libs/zlib/include',
 	'-I $srcdir/src/cexcept',
 	'-I $srcdir/src/gifread',
 	'-I $srcdir/src/minitiff',
@@ -10,7 +11,7 @@ cflags({
 	'-I $srcdir/src/pnmio',
 })
 
-pkg.deps = {'pkg/libs/libpng/headers'}
+pkg.deps = {'pkg/libs/libpng/headers', 'pkg/libs/zlib/headers'}
 
 lib('libdeps.a', [[src/(
 	opngreduc/opngreduc.c
