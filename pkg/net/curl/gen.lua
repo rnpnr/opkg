@@ -21,24 +21,13 @@ build('cat', '$outdir/curl_config.h', {
 	'$builddir/probe/SIZEOF_TIME_T',
 })
 
-build('touch', '$outdir/include/curl/websockets.h')
-
+-- src/include/curl/Makefile.am:/^pkginclude_HEADERS
 pkg.hdrs = copy('$outdir/include/curl', '$srcdir/include/curl', {
-	'curl.h',
-	'curlver.h',
-	'easy.h',
-	'header.h',
-	'mprintf.h',
-	'multi.h',
-	'options.h',
-	'stdcheaders.h',
-	'system.h',
-	'typecheck-gcc.h',
-	'urlapi.h',
+	'curl.h', 'curlver.h', 'easy.h', 'mprintf.h', 'stdcheaders.h', 'multi.h',
+	'typecheck-gcc.h', 'system.h', 'urlapi.h', 'options.h', 'header.h', 'websockets.h',
 })
 pkg.deps = {
 	'$outdir/curl_config.h',
-	'$outdir/include/curl/websockets.h',
 	'$gendir/headers',
 	'pkg/libs/bearssl/headers',
 	'pkg/devel/linux-headers/headers',
@@ -113,6 +102,7 @@ exe('curl', [[
 		tool_getpass.c
 		tool_help.c
 		tool_helpers.c
+		tool_ipfs.c
 		tool_libinfo.c
 		tool_listhelp.c
 		tool_main.c
