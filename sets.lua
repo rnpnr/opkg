@@ -6,6 +6,7 @@ S.bin = {
 	'curl',
 	'git',
 	'hyx',
+	'less',
 	'man-pages-posix',
 	'mandoc',
 	'mblaze',
