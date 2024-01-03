@@ -489,8 +489,9 @@ function man(srcs, section)
 		if not src:match('^[$/]') then
 			src = '$srcdir/'..src
 		end
+		local i = src:reverse():find('.', 1, true)
 		local srcsection = section or src:match('[^.]*$')
-		local outsrc = src:gsub('[^.]*$', srcsection)
+		local outsrc = src:sub(1, #src - i + 1) .. srcsection
 		file('share/man/man'..srcsection..'/'..outsrc:match('[^/]*$'), '644', src)
 	end
 end
