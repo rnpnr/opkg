@@ -486,13 +486,21 @@ end
 
 function man(srcs, section)
 	for _, src in ipairs(srcs) do
+		local out = src..'.gz'
 		if not src:match('^[$/]') then
 			src = '$srcdir/'..src
+			out = '$outdir/'..out
 		end
-		local i = src:reverse():find('.', 1, true)
-		local srcsection = section or src:match('[^.]*$')
-		local outsrc = src:sub(1, #src - i + 1) .. srcsection
-		file('share/man/man'..srcsection..'/'..outsrc:match('[^/]*$'), '644', src)
+
+		local base = src:match('[^/]*$')
+		local ext = base:match('%.([^.]*)$')
+		if ext then base = base:sub(1, -(#ext + 2)) end
+		if section then ext = section end
+		if config.gzman ~= false then
+			build('gzip', out, src)
+			src = out
+		end
+		file('share/man/man'..ext..'/'..base..'.'..ext, '644', src)
 	end
 end
 

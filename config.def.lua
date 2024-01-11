@@ -9,6 +9,9 @@ C.builddir = 'out'
 -- install prefix (needed by some packages)
 C.prefix = ''
 
+-- compress man pages
+C.gzman=true,
+
 --[[
 package/file selection
 
