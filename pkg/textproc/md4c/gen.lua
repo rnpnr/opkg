@@ -3,8 +3,8 @@ cflags({
 	'-I $srcdir/src',
 	'-D MD4C_USE_UTF8',
 	'-D MD_VERSION_MAJOR=0',
-	'-D MD_VERSION_MINOR=4',
-	'-D MD_VERSION_RELEASE=8',
+	'-D MD_VERSION_MINOR=5',
+	'-D MD_VERSION_RELEASE=2',
 })
 
 pkg.hdrs = {
