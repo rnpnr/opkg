@@ -5,8 +5,8 @@ cflags({
 })
 
 exe('qbe', [[
-        abi.c alias.c cfg.c copy.c emit.c fold.c live.c load.c
-        main.c mem.c parse.c rega.c simpl.c spill.c ssa.c util.c
+	main.c util.c parse.c abi.c cfg.c mem.c ssa.c alias.c load.c
+	copy.c fold.c simpl.c live.c spill.c rega.c emit.c
 	amd64/(targ.c sysv.c isel.c emit.c)
 	arm64/(targ.c abi.c isel.c emit.c)
 	rv64/(targ.c abi.c isel.c emit.c)
