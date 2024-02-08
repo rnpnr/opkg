@@ -27,5 +27,6 @@ Additional Packages
 [libgit2]: https://github.com/libgit2/libgit2
 [md4c]: https://github.com/mity/md4c
 [oasis]: https://github.com/oasislinux/oasis
+[optipng]: https://optipng.sourceforge.net/
 [spm]: https://github.com/rnpnr/spm
 [stagit]: https://git.codemadness.org/stagit/file/README.html

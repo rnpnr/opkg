@@ -3,7 +3,7 @@ cflags({
 	'-D _POSIX_C_SOURCE',
 	'-isystem $builddir/pkg/libs/libpng/include',
 	'-isystem $builddir/pkg/libs/zlib/include',
-	'-I $srcdir/src/cexcept',
+	'-I $srcdir/third_party/cexcept',
 	'-I $srcdir/src/gifread',
 	'-I $srcdir/src/minitiff',
 	'-I $srcdir/src/opngreduc',
