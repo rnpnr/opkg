@@ -21,6 +21,10 @@ file('lib/liblua.a', '644', '$outdir/liblua.a')
 exe('lua', {'src/lua.c', 'liblua.a'})
 file('bin/lua5.2', '755', '$outdir/lua')
 sym('bin/lua', 'lua5.2')
-man({'doc/lua.1'})
+exe('luac', {'src/luac.c', 'liblua.a'})
+file('bin/luac5.2', '755', '$outdir/luac')
+sym('bin/luac', 'luac5.2')
+
+man({'doc/lua.1', 'doc/luac.1'})
 
 fetch('curl')
