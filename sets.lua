@@ -17,6 +17,7 @@ S.bin = {
 	'pigz',
 	'pwgen',
 	'qbe',
+	'rc',
 	'samurai',
 	'sbase',
 	'sfeed',

@@ -38,6 +38,10 @@
 [submodule "pkg/lang/awk/src"]
 	path = pkg/lang/awk/src
 	url = https://github.com/onetrueawk/awk.git
+[submodule "pkg/lang/rc/src"]
+	path = pkg/lang/rc/src
+	url = https://github.com/benavento/rc.git
+	ignore = all
 [submodule "pkg/libs/bearssl/src"]
 	path = pkg/libs/bearssl/src
 	url = https://www.bearssl.org/git/BearSSL
