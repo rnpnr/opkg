@@ -1,4 +1,5 @@
 cflags({
+	'-std=c99', '-Wall', '-Wpedantic',
 	'-I $dir',
 	'-I $srcdir/src',
 	'-D MD4C_USE_UTF8',
