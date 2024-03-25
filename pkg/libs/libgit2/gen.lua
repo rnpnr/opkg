@@ -35,6 +35,7 @@ lib('libutil.a', [[
 		)
 		alloc.c
 		date.c
+		errors.c
 		filebuf.c
 		fs_path.c
 		futils.c
@@ -57,11 +58,13 @@ lib('libutil.a', [[
 		runtime.c
 		sortedcache.c
 		str.c
+		strlist.c
 		strmap.c
 		thread.c
 		tsort.c
 		unix/(
 			map.c
+			process.c
 			realpath.c
 		)
 		utf8.c
@@ -94,8 +97,8 @@ lib('libgit2.a', [[
 		commit_list.c
 		config.c
 		config_cache.c
-		config_entries.c
 		config_file.c
+		config_list.c
 		config_mem.c
 		config_parse.c
 		config_snapshot.c
@@ -112,7 +115,6 @@ lib('libgit2.a', [[
 		diff_tform.c
 		diff_xdiff.c
 		email.c
-		errors.c
 		fetch.c
 		fetchhead.c
 		filter.c
@@ -183,7 +185,6 @@ lib('libgit2.a', [[
 		submodule.c
 		sysdir.c
 		tag.c
-		threadstate.c
 		trace.c
 		trailer.c
 		transaction.c
@@ -202,6 +203,8 @@ lib('libgit2.a', [[
 			smart_pkt.c
 			smart_protocol.c
 			ssh.c
+			ssh_exec.c
+			ssh_libssh2.c
 		)
 		tree-cache.c
 		tree.c
@@ -295,6 +298,7 @@ pkg.hdrs = {
 		'credential.h',
 		'diff.h',
 		'email.h',
+		'errors.h',
 		'filter.h',
 		'hashsig.h',
 		'index.h',
