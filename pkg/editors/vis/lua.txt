@@ -8,6 +8,7 @@ lexers/apl.lua
 lexers/applescript.lua
 lexers/asm.lua
 lexers/asp.lua
+lexers/autohotkey.lua
 lexers/autoit.lua
 lexers/awk.lua
 lexers/bash.lua
@@ -93,7 +94,9 @@ lexers/networkd.lua
 lexers/nim.lua
 lexers/nsis.lua
 lexers/null.lua
+lexers/objeck.lua
 lexers/objective_c.lua
+lexers/output.lua
 lexers/pascal.lua
 lexers/perl.lua
 lexers/php.lua
@@ -116,6 +119,7 @@ lexers/rest.lua
 lexers/rexx.lua
 lexers/rhtml.lua
 lexers/routeros.lua
+lexers/rpmspec.lua
 lexers/rstats.lua
 lexers/ruby.lua
 lexers/rust.lua
@@ -135,6 +139,7 @@ lexers/tex.lua
 lexers/texinfo.lua
 lexers/text.lua
 lexers/toml.lua
+lexers/troff.lua
 lexers/txt2tags.lua
 lexers/typescript.lua
 lexers/vala.lua
@@ -155,8 +160,7 @@ plugins/digraph.lua
 plugins/filetype.lua
 plugins/number-inc-dec.lua
 plugins/textobject-lexer.lua
-themes/dark-16.lua
-themes/light-16.lua
+themes/base-16.lua
 themes/solarized.lua
 themes/zenburn.lua
 vis-std.lua
