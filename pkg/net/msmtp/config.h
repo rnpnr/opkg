@@ -6,7 +6,7 @@
 #define HAVE_FMEMOPEN 1
 #define HAVE_FNMATCH_H 1
 #define HAVE_FSEEKO 1
-#define HAVE_FSEEKO64 1
+/* #undef HAVE_FSEEKO64 */
 /* #undef HAVE_GAI_IDN */
 #define HAVE_GETPASS 1
 /* #undef HAVE_GETTEXT */
@@ -45,10 +45,10 @@
 #define PACKAGE "msmtp"
 #define PACKAGE_BUGREPORT "marlam@marlam.de"
 #define PACKAGE_NAME "msmtp"
-#define PACKAGE_STRING "msmtp 1.8.25"
+#define PACKAGE_STRING "msmtp 1.8.26"
 #define PACKAGE_TARNAME "msmtp"
 #define PACKAGE_URL "https://marlam.de/msmtp"
-#define PACKAGE_VERSION "1.8.25"
+#define PACKAGE_VERSION "1.8.26"
 #define PLATFORM "x86_64-pc-linux-musl"
 #define STDC_HEADERS 1
 #ifndef _ALL_SOURCE
@@ -111,7 +111,7 @@
 #ifndef _XOPEN_SOURCE
 /* # undef _XOPEN_SOURCE */
 #endif
-#define VERSION "1.8.25"
+#define VERSION "1.8.26"
 #if (defined _WIN32 || defined __WIN32__) && !defined __CYGWIN__
 #define W32_NATIVE 1
 #endif
