@@ -56,6 +56,9 @@
 	path = pkg/libs/libtls-bearssl/src
 	url = https://git.sr.ht/~mcf/libtls-bearssl
 	ignore = all
+[submodule "pkg/libs/libutp/src"]
+	path = pkg/libs/libutp/src
+	url = https://github.com/oasislinux/libutp.git
 [submodule "pkg/libs/netbsd-curses/src"]
 	path = pkg/libs/netbsd-curses/src
 	url = https://github.com/oasislinux/netbsd-curses.git
