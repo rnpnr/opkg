@@ -46,6 +46,9 @@
 	path = pkg/libs/bearssl/src
 	url = https://www.bearssl.org/git/BearSSL
 	ignore = all
+[submodule "pkg/libs/libevent/src"]
+	path = pkg/libs/libevent/src
+	url = https://github.com/libevent/libevent.git
 [submodule "pkg/libs/libgit2/src"]
 	path = pkg/libs/libgit2/src
 	url = https://github.com/libgit2/libgit2.git

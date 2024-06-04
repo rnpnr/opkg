@@ -1,4 +1,5 @@
 subgen('bearssl')
+subgen('libevent')
 subgen('libgit2')
 subgen('libpng')
 subgen('libtermkey')
