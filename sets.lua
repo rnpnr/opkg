@@ -26,6 +26,7 @@ S.bin = {
 	'stagit',
 	'strace',
 	'the_silver_searcher',
+	'transmission',
 	'vis',
 }
 
