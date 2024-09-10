@@ -27,6 +27,7 @@ S.bin = {
 	'strace',
 	'the_silver_searcher',
 	'transmission',
+	'u-config',
 	'vis',
 }
 

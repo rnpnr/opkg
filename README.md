@@ -17,11 +17,12 @@ Changes
 
 Additional Packages
 -------------------
-* [hyx][] - tiny hex editor
-* [libgit2][] - no network support; needed for stagit.
-* [optipng][] - PNG image optimizer
-* [spm][] - simpler pass
-* [stagit][] - static webpage generator for git repos.
+* [hyx][]      - tiny hex editor
+* [libgit2][]  - no network support; needed for stagit.
+* [optipng][]  - PNG image optimizer
+* [spm][]      - simpler pass
+* [stagit][]   - static webpage generator for git repos.
+* [u-config][] - tiny pkg-config clone that doesn't require libc on amd64.
 
 [hyx]: https://yx7.cc/code/
 [libgit2]: https://github.com/libgit2/libgit2
@@ -30,3 +31,4 @@ Additional Packages
 [optipng]: https://optipng.sourceforge.net/
 [spm]: https://github.com/rnpnr/spm
 [stagit]: https://git.codemadness.org/stagit/file/README.html
+[u-config]: https://github.com/skeeto/u-config/

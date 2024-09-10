@@ -31,6 +31,9 @@
 	path = pkg/devel/the_silver_searcher/src
 	url = https://github.com/ggreer/the_silver_searcher.git
 	ignore = all
+[submodule "pkg/devel/u-config/src"]
+	path = pkg/devel/u-config/src
+	url = https://github.com/skeeto/u-config.git
 [submodule "pkg/editors/vis/src"]
 	path = pkg/editors/vis/src
 	url = https://github.com/martanne/vis.git
