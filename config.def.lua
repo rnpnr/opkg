@@ -10,7 +10,7 @@ C.builddir = 'out'
 C.prefix = ''
 
 -- compress man pages
-C.gzman=true,
+C.gzman = true
 
 --[[
 package/file selection
