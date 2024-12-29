@@ -540,7 +540,7 @@
 # endif
 #endif
 /* #undef X32 */
-#define X86_64 1
+/* #undef X86_64 */
 /* #undef XTENSA */
 /* #undef gid_t */
 /* #undef typeof */
