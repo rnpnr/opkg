@@ -29,6 +29,7 @@ S.bin = {
 	'transmission',
 	'u-config',
 	'vis',
+	'zstd',
 }
 
 S.lib = {

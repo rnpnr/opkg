@@ -7,6 +7,10 @@
 [submodule "pkg/arch/pigz/src"]
 	path = pkg/arch/pigz/src
 	url = https://github.com/madler/pigz.git
+[submodule "pkg/arch/zstd/src"]
+	path = pkg/arch/zstd/src
+	url = https://github.com/facebook/zstd.git
+	ignore = all
 [submodule "pkg/crypt/b3sum/src"]
 	path = pkg/crypt/b3sum/src
 	url = https://git.sr.ht/~mcf/b3sum

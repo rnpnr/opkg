@@ -1,1 +1,2 @@
 subgen('pigz')
+subgen('zstd')
