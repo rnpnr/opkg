@@ -1,7 +1,6 @@
 # 2,<cd src/lua && find * -type f -name '*.lua' | LC_COLLATE=C sort
 lexers/actionscript.lua
 lexers/ada.lua
-lexers/ansi_c.lua
 lexers/antlr.lua
 lexers/apdl.lua
 lexers/apl.lua
@@ -15,6 +14,7 @@ lexers/bash.lua
 lexers/batch.lua
 lexers/bibtex.lua
 lexers/boo.lua
+lexers/c.lua
 lexers/caml.lua
 lexers/chuck.lua
 lexers/clojure.lua
@@ -27,11 +27,11 @@ lexers/crystal.lua
 lexers/csharp.lua
 lexers/css.lua
 lexers/cuda.lua
+lexers/d.lua
 lexers/dart.lua
 lexers/desktop.lua
 lexers/diff.lua
 lexers/django.lua
-lexers/dmd.lua
 lexers/dockerfile.lua
 lexers/dot.lua
 lexers/dsv.lua
@@ -39,6 +39,7 @@ lexers/eiffel.lua
 lexers/elixir.lua
 lexers/elm.lua
 lexers/erlang.lua
+lexers/factor.lua
 lexers/fantom.lua
 lexers/faust.lua
 lexers/fennel.lua
@@ -92,10 +93,12 @@ lexers/myrddin.lua
 lexers/nemerle.lua
 lexers/networkd.lua
 lexers/nim.lua
+lexers/nix.lua
 lexers/nsis.lua
 lexers/null.lua
 lexers/objeck.lua
 lexers/objective_c.lua
+lexers/org.lua
 lexers/output.lua
 lexers/pascal.lua
 lexers/perl.lua
@@ -111,6 +114,7 @@ lexers/protobuf.lua
 lexers/ps.lua
 lexers/pure.lua
 lexers/python.lua
+lexers/r.lua
 lexers/rails.lua
 lexers/rc.lua
 lexers/reason.lua
@@ -120,7 +124,6 @@ lexers/rexx.lua
 lexers/rhtml.lua
 lexers/routeros.lua
 lexers/rpmspec.lua
-lexers/rstats.lua
 lexers/ruby.lua
 lexers/rust.lua
 lexers/sass.lua
@@ -144,7 +147,6 @@ lexers/txt2tags.lua
 lexers/typescript.lua
 lexers/vala.lua
 lexers/vb.lua
-lexers/vbscript.lua
 lexers/vcard.lua
 lexers/verilog.lua
 lexers/vhdl.lua
