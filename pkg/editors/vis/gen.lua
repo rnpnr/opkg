@@ -1,4 +1,4 @@
-set('version', 'v0.9')
+set('version', 'v0.9-dirty')
 cflags({
 	'-std=c99',
 	'-D CONFIG_HELP=1',
@@ -41,6 +41,7 @@ exe('vis', [[
 	text-objects.c
 	text-util.c
 	ui-terminal.c
+	util.c
 	view.c
 	vis.c
 	vis-lua.c
@@ -79,4 +80,4 @@ end
 sym('share/vis/lexer.lua', 'lexers/lexer.lua')
 sym('share/vis/themes/default.lua', 'base-16.lua')
 
-fetch('git')
+--fetch('git')
