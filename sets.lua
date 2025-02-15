@@ -13,6 +13,7 @@ S.bin = {
 	'mblaze',
 	'md4c',
 	'msmtp',
+	'muon',
 	'openbsd',
 	'optipng',
 	'pax',

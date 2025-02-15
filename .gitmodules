@@ -46,6 +46,9 @@
 [submodule "pkg/msmtp/src"]
 	path = pkg/msmtp/src
 	url = https://github.com/marlam/msmtp-mirror.git
+[submodule "pkg/muon/src"]
+	path = pkg/muon/src
+	url = https://git.sr.ht/~lattis/muon
 [submodule "pkg/netbsd-curses/src"]
 	path = pkg/netbsd-curses/src
 	url = https://github.com/oasislinux/netbsd-curses.git
