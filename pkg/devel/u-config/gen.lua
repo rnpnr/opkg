@@ -12,8 +12,8 @@ archcflags['x86_64']   = {'-fno-asynchronous-unwind-tables', '-fno-stack-protect
 archldflags['x86_64']  = {'-nostdlib', '-Wl,--gc-sections'}
 
 local archsrcs = {}
-archsrcs['generic'] = {'generic_main.c'}
-archsrcs['x86_64']  = {'linux_amd64_main.c'}
+archsrcs['generic'] = {'main_posix.c'}
+archsrcs['x86_64']  = {'main_linux_amd64.c'}
 
 cflags(archcflags[arch])
 set('ldflags', '$ldflags '..table.concat(archldflags[arch], ' '))
