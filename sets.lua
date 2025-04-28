@@ -14,6 +14,7 @@ S.bin = {
 	'msmtp',
 	'openbsd',
 	'optipng',
+	'pax',
 	'pigz',
 	'pwgen',
 	'qbe',
