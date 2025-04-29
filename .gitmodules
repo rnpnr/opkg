@@ -4,6 +4,9 @@
 [submodule "pkg/admin/spm/src"]
 	path = pkg/admin/spm/src
 	url = https://github.com/rnpnr/spm.git
+[submodule "pkg/arch/pax/src"]
+	path = pkg/arch/pax/src
+	url = https://git.sr.ht/~mcf/pax
 [submodule "pkg/arch/pigz/src"]
 	path = pkg/arch/pigz/src
 	url = https://github.com/madler/pigz.git
