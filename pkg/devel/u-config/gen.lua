@@ -1,5 +1,6 @@
 -- TODO: i686 support?
 local arch = ({
+	aarch64='aarch64',
 	x86_64='x86_64',
 })[config.target.platform:match('[^-]*')]
 if not arch then arch = 'generic' end
@@ -10,9 +11,12 @@ archcflags['generic']  = {}
 archldflags['generic'] = {}
 archcflags['x86_64']   = {'-fno-asynchronous-unwind-tables', '-fno-stack-protector', '-fno-builtin'}
 archldflags['x86_64']  = {'-nostdlib', '-Wl,--gc-sections'}
+archcflags['aarch64']  = {'-fno-asynchronous-unwind-tables', '-fno-stack-protector', '-fno-builtin'}
+archldflags['aarch64'] = {'-nostdlib', '-Wl,--gc-sections'}
 
 local archsrcs = {}
 archsrcs['generic'] = {'main_posix.c'}
+archsrcs['aarch64'] = {'main_linux_aarch64.c'}
 archsrcs['x86_64']  = {'main_linux_amd64.c'}
 
 cflags(archcflags[arch])
