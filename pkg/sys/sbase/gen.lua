@@ -8,6 +8,7 @@ cflags({
 
 lib('libutil.a', [[libutil/(
 	concat.c
+	confirm.c
 	cp.c
 	crypt.c
 	ealloc.c
@@ -33,9 +34,9 @@ lib('libutil.a', [[libutil/(
 	sha224.c
 	sha256.c
 	sha384.c
-	sha512.c
 	sha512-224.c
 	sha512-256.c
+	sha512.c
 	strcasestr.c
 	strlcat.c
 	strlcpy.c
