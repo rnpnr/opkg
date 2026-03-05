@@ -6,6 +6,7 @@ exe('hyx', {
 	'history.c',
 	'hyx.c',
 	'input.c',
+	'term.c',
 	'view.c',
 })
 
