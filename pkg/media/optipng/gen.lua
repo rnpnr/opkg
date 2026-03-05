@@ -3,27 +3,32 @@ cflags({
 	'-D _POSIX_C_SOURCE',
 	'-isystem $builddir/pkg/libs/libpng/include',
 	'-isystem $builddir/pkg/libs/zlib/include',
-	'-I $srcdir/third_party/cexcept',
-	'-I $srcdir/src/gifread',
-	'-I $srcdir/src/minitiff',
 	'-I $srcdir/src/opngreduc',
 	'-I $srcdir/src/pngxtern',
-	'-I $srcdir/src/pnmio',
+	'-I $srcdir/third_party/cexcept',
+	'-I $srcdir/third_party/gifread',
+	'-I $srcdir/third_party/minitiff',
+	'-I $srcdir/third_party/pnmio',
 })
 
 pkg.deps = {'pkg/libs/libpng/headers', 'pkg/libs/zlib/headers'}
 
-lib('libdeps.a', [[src/(
-	opngreduc/opngreduc.c
-	gifread/gifread.c
-	pngxtern/(
-		pngxread.c pngxrbmp.c pngxrgif.c pngxrjpg.c pngxrpnm.c
-		pngxrtif.c
-		pngxio.c pngxmem.c pngxset.c
+lib('libdeps.a', [[
+	src/(
+		opngreduc/opngreduc.c
+		pngxtern/(
+			pngxread.c pngxrbmp.c pngxrgif.c pngxrjpg.c pngxrpnm.c
+			pngxrtif.c
+			pngxio.c pngxmem.c pngxset.c
+		)
 	)
-	pnmio/(pnmin.c pnmout.c pnmutil.c)
-	minitiff/(tiffread.c tiffutil.c)
-)]])
+	third_party/(
+		gifread/gifread.c
+		pnmio/(pnmin.c pnmout.c pnmutil.c)
+		minitiff/(tiffread.c tiffutil.c)
+		wildargs/wildargs.c
+	)
+]])
 
 exe('optipng', [[
 	src/optipng/(
@@ -32,7 +37,6 @@ exe('optipng', [[
 		bitset.c
 		ioutil.c
 		ratio.c
-		wildargs.c
 	)
 	libdeps.a
 	$builddir/pkg/libs/libpng/libpng.a.d
