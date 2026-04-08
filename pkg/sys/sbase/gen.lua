@@ -1,15 +1,16 @@
-cflags({
-	'-std=c99', '-Wall', '-Wpedantic', '-Wno-maybe-uninitialized',
+cflags{
+	'-std=c99', '-Wall', '-Wpedantic', '-Wno-maybe-uninitialized', '-Wno-parentheses',
 	'-D _DEFAULT_SOURCE',
 	'-D _BSD_SOURCE',
 	'-D _XOPEN_SOURCE=700',
 	'-I $outdir',
-})
+}
 
 lib('libutil.a', [[libutil/(
 	concat.c
 	cp.c
 	crypt.c
+	confirm.c
 	ealloc.c
 	enmasse.c
 	eprintf.c
