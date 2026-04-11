@@ -1,6 +1,7 @@
 subgen('awk')
 subgen('b3sum')
 subgen('bearssl')
+subgen('bzip2')
 subgen('cproc')
 subgen('curl')
 subgen('fspec-sync')

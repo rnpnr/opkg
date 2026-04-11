@@ -8,6 +8,9 @@
 	path = pkg/bearssl/src
 	url = https://www.bearssl.org/git/BearSSL
 	ignore = all
+[submodule "pkg/bzip2/src"]
+	path = pkg/bzip2/src
+	url = git://sourceware.org/git/bzip2.git
 [submodule "pkg/cproc/src"]
 	path = pkg/cproc/src
 	url = https://git.sr.ht/~mcf/cproc

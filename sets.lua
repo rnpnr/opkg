@@ -2,6 +2,7 @@ local S = {}
 
 S.bin = {
 	'awk',
+	'bzip2',
 	'cproc',
 	'curl',
 	'git',
