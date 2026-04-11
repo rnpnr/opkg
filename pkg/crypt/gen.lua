@@ -1,1 +1,0 @@
-subgen('b3sum')

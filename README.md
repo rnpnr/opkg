@@ -10,7 +10,6 @@ The majority of things are unchanged. Most notably:
 
 Changes
 -------
-* Packages have been moved to sorted directories.
 * The set of packages is curated to my personal preferences.
 * OpenBSD `xargs` instead of sbase for parallel processing support.
 * cmark was replaced with [md4c][].

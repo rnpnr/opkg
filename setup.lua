@@ -90,7 +90,7 @@ local function gen(gendir)
 		else
 			os.rename(tmp, out)
 		end
-		build('fspec-hash', '$outdir/local-hashed.fspec', {'$outdir/local.fspec', '|', '$builddir/pkg/devel/fspec-sync/host/fspec-hash', srcs})
+		build('fspec-hash', '$outdir/local-hashed.fspec', {'$outdir/local.fspec', '|', '$builddir/pkg/fspec-sync/host/fspec-hash', srcs})
 		table.insert(pkg.inputs.fspec, '$outdir/local-hashed.fspec')
 	end
 	if next(pkg.inputs.index) then

@@ -116,16 +116,16 @@ rule git-init
   command = git init $repo_flags $repo && touch $out
 
 rule fspec-hash
-  command = $builddir/pkg/devel/fspec-sync/host/fspec-hash <$in >$out
+  command = $builddir/pkg/fspec-sync/host/fspec-hash <$in >$out
 
 rule fspec-sort
-  command = $builddir/pkg/devel/fspec-sync/host/fspec-sort -p <$in >$out
+  command = $builddir/pkg/fspec-sync/host/fspec-sort -p <$in >$out
 
 rule fspec-tar
-  command = $builddir/pkg/devel/fspec-sync/host/fspec-tar <$in | zstd >$out
+  command = $builddir/pkg/fspec-sync/host/fspec-tar <$in | zstd >$out
 
 rule fetch
-  command = cd $basedir && PAX=$$OLDPWD/$builddir/pkg/arch/pax/host/pax sh $$OLDPWD/$script $gendir && touch $$OLDPWD/$out
+  command = cd $basedir && PAX=$$OLDPWD/$builddir/pkg/pax/host/pax sh $$OLDPWD/$script $gendir && touch $$OLDPWD/$out
   description = 	FETCH	$gendir
   restat = 1
   generator = 1

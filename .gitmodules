@@ -1,99 +1,99 @@
-[submodule "pkg/admin/pwgen/src"]
-	path = pkg/admin/pwgen/src
-	url = https://github.com/tytso/pwgen.git
-[submodule "pkg/admin/spm/src"]
-	path = pkg/admin/spm/src
-	url = https://github.com/rnpnr/spm.git
-[submodule "pkg/arch/pax/src"]
-	path = pkg/arch/pax/src
-	url = https://git.sr.ht/~mcf/pax
-[submodule "pkg/arch/pigz/src"]
-	path = pkg/arch/pigz/src
-	url = https://github.com/madler/pigz.git
-[submodule "pkg/arch/zstd/src"]
-	path = pkg/arch/zstd/src
-	url = https://github.com/facebook/zstd.git
-	ignore = all
-[submodule "pkg/crypt/b3sum/src"]
-	path = pkg/crypt/b3sum/src
-	url = https://git.sr.ht/~mcf/b3sum
-[submodule "pkg/crypt/fspec-sync/src"]
-	path = pkg/devel/fspec-sync/src
-	url = https://github.com/oasislinux/fspec-sync.git
-[submodule "pkg/devel/cproc/src"]
-	path = pkg/devel/cproc/src
-	url = https://git.sr.ht/~mcf/cproc
-[submodule "pkg/devel/git/src"]
-	path = pkg/devel/git/src
-	url = https://github.com/git/git.git
-	ignore = all
-[submodule "pkg/devel/qbe/src"]
-	path = pkg/devel/qbe/src
-	url = git://c9x.me/qbe.git
-	ignore = all
-[submodule "pkg/devel/samurai/src"]
-	path = pkg/devel/samurai/src
-	url = https://github.com/michaelforney/samurai.git
-[submodule "pkg/devel/the_silver_searcher/src"]
-	path = pkg/devel/the_silver_searcher/src
-	url = https://github.com/ggreer/the_silver_searcher.git
-	ignore = all
-[submodule "pkg/devel/u-config/src"]
-	path = pkg/devel/u-config/src
-	url = https://github.com/skeeto/u-config.git
-[submodule "pkg/editors/vis/src"]
-	path = pkg/editors/vis/src
-	url = https://github.com/martanne/vis.git
-	ignore = all
-[submodule "pkg/lang/awk/src"]
-	path = pkg/lang/awk/src
+[submodule "pkg/awk/src"]
+	path = pkg/awk/src
 	url = https://github.com/onetrueawk/awk.git
-[submodule "pkg/lang/rc/src"]
-	path = pkg/lang/rc/src
-	url = https://github.com/benavento/rc.git
-	ignore = all
-[submodule "pkg/libs/bearssl/src"]
-	path = pkg/libs/bearssl/src
+[submodule "pkg/b3sum/src"]
+	path = pkg/b3sum/src
+	url = https://git.sr.ht/~mcf/b3sum
+[submodule "pkg/bearssl/src"]
+	path = pkg/bearssl/src
 	url = https://www.bearssl.org/git/BearSSL
 	ignore = all
-[submodule "pkg/libs/libevent/src"]
-	path = pkg/libs/libevent/src
+[submodule "pkg/cproc/src"]
+	path = pkg/cproc/src
+	url = https://git.sr.ht/~mcf/cproc
+[submodule "pkg/fspec-sync/src"]
+	path = pkg/fspec-sync/src
+	url = https://github.com/oasislinux/fspec-sync.git
+[submodule "pkg/git/src"]
+	path = pkg/git/src
+	url = https://github.com/git/git.git
+	ignore = all
+[submodule "pkg/libevent/src"]
+	path = pkg/libevent/src
 	url = https://github.com/libevent/libevent.git
-[submodule "pkg/libs/libgit2/src"]
-	path = pkg/libs/libgit2/src
+[submodule "pkg/libgit2/src"]
+	path = pkg/libgit2/src
 	url = https://github.com/libgit2/libgit2.git
-[submodule "pkg/libs/libpng/src"]
-	path = pkg/libs/libpng/src
+[submodule "pkg/libpng/src"]
+	path = pkg/libpng/src
 	url = https://github.com/glennrp/libpng.git
-[submodule "pkg/libs/libtls-bearssl/src"]
-	path = pkg/libs/libtls-bearssl/src
+[submodule "pkg/libtls-bearssl/src"]
+	path = pkg/libtls-bearssl/src
 	url = https://git.sr.ht/~mcf/libtls-bearssl
 	ignore = all
-[submodule "pkg/libs/libutp/src"]
-	path = pkg/libs/libutp/src
+[submodule "pkg/libutp/src"]
+	path = pkg/libutp/src
 	url = https://github.com/oasislinux/libutp.git
-[submodule "pkg/libs/netbsd-curses/src"]
-	path = pkg/libs/netbsd-curses/src
+[submodule "pkg/mblaze/src"]
+	path = pkg/mblaze/src
+	url = https://github.com/leahneukirchen/mblaze.git
+[submodule "pkg/md4c/src"]
+	path = pkg/md4c/src
+	url = https://github.com/mity/md4c.git
+[submodule "pkg/msmtp/src"]
+	path = pkg/msmtp/src
+	url = https://github.com/marlam/msmtp-mirror.git
+[submodule "pkg/netbsd-curses/src"]
+	path = pkg/netbsd-curses/src
 	url = https://github.com/oasislinux/netbsd-curses.git
 	ignore = all
-[submodule "pkg/libs/zlib/src"]
-	path = pkg/libs/zlib/src
-	url = https://github.com/madler/zlib.git
-[submodule "pkg/net/mblaze/src"]
-	path = pkg/net/mblaze/src
-	url = https://github.com/leahneukirchen/mblaze.git
-[submodule "pkg/net/msmtp/src"]
-	path = pkg/net/msmtp/src
-	url = https://github.com/marlam/msmtp-mirror.git
-[submodule "pkg/net/sfeed/src"]
-	path = pkg/net/sfeed/src
-	url = git://git.codemadness.org/sfeed
-[submodule "pkg/sys/sbase/src"]
-	path = pkg/sys/sbase/src
+[submodule "pkg/pax/src"]
+	path = pkg/pax/src
+	url = https://git.sr.ht/~mcf/pax
+[submodule "pkg/pigz/src"]
+	path = pkg/pigz/src
+	url = https://github.com/madler/pigz.git
+[submodule "pkg/pwgen/src"]
+	path = pkg/pwgen/src
+	url = https://github.com/tytso/pwgen.git
+[submodule "pkg/qbe/src"]
+	path = pkg/qbe/src
+	url = git://c9x.me/qbe.git
+	ignore = all
+[submodule "pkg/rc/src"]
+	path = pkg/rc/src
+	url = https://github.com/benavento/rc.git
+	ignore = all
+[submodule "pkg/samurai/src"]
+	path = pkg/samurai/src
+	url = https://github.com/michaelforney/samurai.git
+[submodule "pkg/sbase/src"]
+	path = pkg/sbase/src
 	url = git://git.suckless.org/sbase
-[submodule "pkg/textproc/md4c/src"]
-	path = pkg/textproc/md4c/src
-	url = https://github.com/mity/md4c.git
-[submodule "pkg/www/stagit/src"]
-	path = pkg/www/stagit/src
+[submodule "pkg/sfeed/src"]
+	path = pkg/sfeed/src
+	url = git://git.codemadness.org/sfeed
+[submodule "pkg/spm/src"]
+	path = pkg/spm/src
+	url = https://github.com/rnpnr/spm.git
+[submodule "pkg/stagit/src"]
+	path = pkg/stagit/src
 	url = git://git.codemadness.org/stagit
+[submodule "pkg/the_silver_searcher/src"]
+	path = pkg/the_silver_searcher/src
+	url = https://github.com/ggreer/the_silver_searcher.git
+	ignore = all
+[submodule "pkg/u-config/src"]
+	path = pkg/u-config/src
+	url = https://github.com/skeeto/u-config.git
+[submodule "pkg/vis/src"]
+	path = pkg/vis/src
+	url = https://github.com/martanne/vis.git
+	ignore = all
+[submodule "pkg/zlib/src"]
+	path = pkg/zlib/src
+	url = https://github.com/madler/zlib.git
+[submodule "pkg/zstd/src"]
+	path = pkg/zstd/src
+	url = https://github.com/facebook/zstd.git
+	ignore = all

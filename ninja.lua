@@ -400,7 +400,7 @@ function fetch(method)
 	end
 	if method ~= 'git' then
 		table.insert(deps, '||')
-		table.insert(deps, '$builddir/pkg/arch/pax/host/pax')
+		table.insert(deps, '$builddir/pkg/pax/host/pax')
 	end
 	build('fetch', '$dir/fetch', deps, {script=script})
 	if basedir ~= '.' then
