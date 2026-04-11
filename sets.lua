@@ -30,6 +30,7 @@ S.bin = {
 	'the_silver_searcher',
 	'transmission',
 	'u-config',
+	'unzip',
 	'vis',
 	'zstd',
 }
