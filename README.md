@@ -13,6 +13,7 @@ Changes
 * The set of packages is curated to my personal preferences.
 * OpenBSD `xargs` instead of sbase for parallel processing support.
 * cmark was replaced with [md4c][].
+* freestanding version of [u-config][] is built where supported.
 
 Additional Packages
 -------------------
@@ -21,7 +22,6 @@ Additional Packages
 * [optipng][]  - PNG image optimizer
 * [spm][]      - simpler pass
 * [stagit][]   - static webpage generator for git repos.
-* [u-config][] - tiny pkg-config clone that doesn't require libc on amd64.
 
 [hyx]: https://yx7.cc/code/
 [libgit2]: https://github.com/libgit2/libgit2
