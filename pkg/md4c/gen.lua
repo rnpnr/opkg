@@ -1,12 +1,12 @@
-cflags({
+cflags{
 	'-std=c99', '-Wall', '-Wpedantic',
 	'-I $dir',
 	'-I $srcdir/src',
 	'-D MD4C_USE_UTF8',
 	'-D MD_VERSION_MAJOR=0',
 	'-D MD_VERSION_MINOR=5',
-	'-D MD_VERSION_RELEASE=2',
-})
+	'-D MD_VERSION_RELEASE=3',
+}
 
 pkg.hdrs = {
 	copy('$outdir/include', '$srcdir/src', {'md4c.h', 'md4c-html.h'}),
@@ -25,6 +25,6 @@ exe('md2html-bin', [[
 	libmd4c.a.d
 ]])
 file('bin/md2html', '755', '$outdir/md2html-bin')
-man({'md2html/md2html.1'})
+man{'md2html/md2html.1'}
 
-fetch('git')
+fetch 'git'
