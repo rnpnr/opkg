@@ -20,7 +20,7 @@
 [submodule "pkg/git/src"]
 	path = pkg/git/src
 	url = https://github.com/git/git.git
-	ignore = all
+	ignore = untracked
 [submodule "pkg/libevent/src"]
 	path = pkg/libevent/src
 	url = https://github.com/libevent/libevent.git
