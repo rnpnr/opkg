@@ -17,6 +17,7 @@
 [submodule "pkg/curl/src"]
 	path = pkg/curl/src
 	url = https://github.com/oasislinux/curl.git
+	ignore = all
 [submodule "pkg/fspec-sync/src"]
 	path = pkg/fspec-sync/src
 	url = https://github.com/oasislinux/fspec-sync.git
