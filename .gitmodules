@@ -14,6 +14,9 @@
 [submodule "pkg/cproc/src"]
 	path = pkg/cproc/src
 	url = https://git.sr.ht/~mcf/cproc
+[submodule "pkg/curl/src"]
+	path = pkg/curl/src
+	url = https://github.com/oasislinux/curl.git
 [submodule "pkg/fspec-sync/src"]
 	path = pkg/fspec-sync/src
 	url = https://github.com/oasislinux/fspec-sync.git
