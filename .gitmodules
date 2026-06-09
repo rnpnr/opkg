@@ -69,7 +69,7 @@
 [submodule "pkg/qbe/src"]
 	path = pkg/qbe/src
 	url = git://c9x.me/qbe.git
-	ignore = all
+	shallow = true
 [submodule "pkg/rc/src"]
 	path = pkg/rc/src
 	url = https://github.com/oasislinux/rc.git
