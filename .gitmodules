@@ -57,6 +57,10 @@
 	path = pkg/netbsd-curses/src
 	url = https://github.com/oasislinux/netbsd-curses.git
 	ignore = all
+[submodule "pkg/oksh/src"]
+	path = pkg/oksh/src
+	url = https://github.com/ibara/oksh.git
+	ignore = all
 [submodule "pkg/pax/src"]
 	path = pkg/pax/src
 	url = https://git.sr.ht/~mcf/pax

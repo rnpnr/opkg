@@ -14,6 +14,7 @@ S.bin = {
 	'md4c',
 	'msmtp',
 	'muon',
+	'oksh',
 	'openbsd',
 	'optipng',
 	'pax',
